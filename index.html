@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mistya - Профиль</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -139,6 +140,70 @@
             border: 1px solid #8a2be2;
         }
 
+        .social-links {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(40, 25, 70, 0.6);
+            border-radius: 50%;
+            border: 1px solid #5d3a9b;
+            color: #b19cd9;
+            font-size: 1.8rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 20px rgba(138, 43, 226, 0.6);
+            border-color: #8a2be2;
+        }
+
+        .social-link:hover::before {
+            left: 100%;
+        }
+
+        .social-link.telegram:hover {
+            color: #0088cc;
+            text-shadow: 0 0 15px rgba(0, 136, 204, 0.8);
+            border-color: #0088cc;
+        }
+
+        .social-link.outlook:hover {
+            color: #0072c6;
+            text-shadow: 0 0 15px rgba(0, 114, 198, 0.8);
+            border-color: #0072c6;
+        }
+
+        .social-link.github:hover {
+            color: #ffffff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            border-color: #ffffff;
+        }
+
         .quote {
             grid-column: 1 / -1;
             text-align: center;
@@ -206,6 +271,17 @@
             .header h1 {
                 font-size: 2.5rem;
             }
+            
+            .social-links {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            
+            .social-link {
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
+            }
         }
     </style>
 </head>
@@ -249,6 +325,18 @@
                 </div>
             </div>
             
+            <div class="social-links">
+                <a href="https://t.me/your_telegram" class="social-link telegram" target="_blank" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="mailto:your.email@outlook.com" class="social-link outlook" title="Outlook">
+                    <i class="fab fa-microsoft"></i>
+                </a>
+                <a href="https://github.com/your_github" class="social-link github" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
             <div class="quote">
                 <p>In the world of code, just like in Ender, every portal opens up new possibilities. Create, explore, and never stop learning.</p>
             </div>
@@ -288,7 +376,7 @@
             }
             
             // Анимация появления элементов
-            const cards = document.querySelectorAll('.info-card, .quote');
+            const cards = document.querySelectorAll('.info-card, .quote, .social-link');
             cards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
@@ -303,5 +391,3 @@
     </script>
 </body>
 </html>
-
-
