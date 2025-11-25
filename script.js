@@ -146,7 +146,7 @@ function initSnakeEasterEgg() {
         // Отрисовка счета
         ctx.fillStyle = '#ffffff';
         ctx.font = '16px Arial';
-        ctx.fillText('Счет: ' + score, 10, 20);
+        ctx.fillText('Счет: ' + score, 1, 2);
     }
     
     function gameOver() {
@@ -196,3 +196,4 @@ function initSnakeEasterEgg() {
         }
     });
 }
+
