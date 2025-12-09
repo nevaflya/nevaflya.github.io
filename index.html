@@ -3,79 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bio</title>
+    <title>Mystical Mistya | Developer from Another Dimension</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="profile-container">
-        <div class="ender-eye"></div>
-        
-        <div class="header">
-            <h1>mistya</h1>
-            <p>dev not from this world</p>
+    <!-- Звёздное небо -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <!-- Энергетические порталы -->
+    <div class="portal portal-1"></div>
+    <div class="portal portal-2"></div>
+    <div class="portal portal-3"></div>
+    
+    <!-- Основной контейнер -->
+    <div class="dimension-gate">
+        <div class="gate-border">
+            <div class="gate-corner tl"></div>
+            <div class="gate-corner tr"></div>
+            <div class="gate-corner bl"></div>
+            <div class="gate-corner br"></div>
         </div>
         
-        <div class="profile-content">
-            <div class="info-card">
-                <h2>about me:</h2>
-                <div class="info-item">
-                    <i>👤</i> <span>nickname: mistya</span>
-                </div>
-                <div class="info-item">
-                    <i>🎂</i> <span>age: 15 yo</span>
-                </div>
-                <div class="info-item">
-                    <i>🏙️</i> <span>city: sochi</span>
+        <div class="profile-container">
+            <!-- Глаз всевидящий -->
+            <div class="all-seeing-eye">
+                <div class="eye-pupil"></div>
+                <div class="eye-glow"></div>
+            </div>
+            
+            <!-- Анимированный заголовок -->
+            <div class="header">
+                <div class="title-wrapper">
+                    <h1 class="glitch" data-text="MISTYA">MISTYA</h1>
+                    <div class="subtitle">
+                        <span class="cyber-text">DEV NOT FROM THIS WORLD</span>
+                        <div class="scan-line"></div>
+                    </div>
                 </div>
             </div>
             
-            <div class="info-card">
-                <h2>experience</h2>
-                <div class="info-item">
-                    <i>⏳</i> <span>tenure: 2 yo</span>
+            <!-- Основной контент -->
+            <div class="profile-content">
+                <!-- Левая карточка -->
+                <div class="info-card cosmic">
+                    <div class="card-header">
+                        <i class="fas fa-user-astronaut"></i>
+                        <h2>DIMENSIONAL PROFILE</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-item hologram">
+                            <div class="hologram-icon">👤</div>
+                            <div class="info-content">
+                                <span class="info-label">CODENAME</span>
+                                <span class="info-value">MISTYA</span>
+                            </div>
+                        </div>
+                        <div class="info-item hologram">
+                            <div class="hologram-icon">🌀</div>
+                            <div class="info-content">
+                                <span class="info-label">DIMENSIONAL AGE</span>
+                                <span class="info-value">15 SOLAR CYCLES</span>
+                            </div>
+                        </div>
+                        <div class="info-item hologram">
+                            <div class="hologram-icon">🌌</div>
+                            <div class="info-content">
+                                <span class="info-label">LOCATION</span>
+                                <span class="info-value">SOCHI SECTOR</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <i>💻</i> <span>prog lang:</span>
+                
+                <!-- Правая карточка -->
+                <div class="info-card cosmic">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h2>SYSTEM KNOWLEDGE</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-item hologram">
+                            <div class="hologram-icon">⏳</div>
+                            <div class="info-content">
+                                <span class="info-label">EXPERIENCE</span>
+                                <span class="info-value">2 DIMENSIONAL YEARS</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="hologram-icon">💻</div>
+                            <div class="info-content">
+                                <span class="info-label">PROGRAMMING LANGUAGES</span>
+                            </div>
+                        </div>
+                        <div class="languages-grid">
+                            <div class="language-cube" data-language="HTML">
+                                <div class="cube-face front">HTML</div>
+                                <div class="cube-face back">WEB</div>
+                            </div>
+                            <div class="language-cube" data-language="CSS">
+                                <div class="cube-face front">CSS</div>
+                                <div class="cube-face back">STYLE</div>
+                            </div>
+                            <div class="language-cube" data-language="JS">
+                                <div class="cube-face front">JS</div>
+                                <div class="cube-face back">LOGIC</div>
+                            </div>
+                            <div class="language-cube" data-language="PY">
+                                <div class="cube-face front">PY</div>
+                                <div class="cube-face back">AI</div>
+                            </div>
+                            <div class="language-cube" data-language="C++">
+                                <div class="cube-face front">C++</div>
+                                <div class="cube-face back">CORE</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="languages">
-                    <span class="language-tag">HTML</span>
-                    <span class="language-tag">CSS</span>
-                    <span class="language-tag">JavaScript</span>
-                    <span class="language-tag">Python</span>
-                    <span class="language-tag">C++</span>
+                
+                <!-- Социальные связи -->
+                <div class="social-portal">
+                    <h3 class="portal-title">INTERDIMENSIONAL LINKS</h3>
+                    <div class="portal-gate">
+                        <a href="https://t.me/m1stya" class="social-orb telegram" target="_blank" data-tooltip="Telegram Dimension">
+                            <div class="orb-core"></div>
+                            <i class="fab fa-telegram-plane"></i>
+                            <div class="orb-ring"></div>
+                        </a>
+                        <a href="mailto:feedback_mistya@hotmail.com" class="social-orb outlook" data-tooltip="Outlook Transmission">
+                            <div class="orb-core"></div>
+                            <i class="fas fa-envelope"></i>
+                            <div class="orb-ring"></div>
+                        </a>
+                        <a href="https://github.com/nevaflya" class="social-orb github" target="_blank" data-tooltip="GitHub Repository">
+                            <div class="orb-core"></div>
+                            <i class="fab fa-github"></i>
+                            <div class="orb-ring"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Цитата -->
+                <div class="quote-matrix">
+                    <div class="matrix-border">
+                        <div class="corner corner-tl"></div>
+                        <div class="corner corner-tr"></div>
+                        <div class="corner corner-bl"></div>
+                        <div class="corner corner-br"></div>
+                    </div>
+                    <div class="matrix-text">
+                        <p>In the quantum realm of code, every portal reveals new dimensions. Create, explore, and transcend limitations.</p>
+                    </div>
+                    <div class="matrix-code"></div>
                 </div>
             </div>
             
-            <div class="social-links">
-                <a href="https://t.me/m1stya" class="social-link telegram" target="_blank" title="Telegram">
-                    <i class="fab fa-telegram"></i>
-                </a>
-                <a href="mailto:feedback_mistya@hotmail.com" class="social-link outlook" title="Outlook">
-                    <i class="fab fa-microsoft"></i>
-                </a>
-                <a href="https://github.com/nevaflya" class="social-link github" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            
-            <div class="quote">
-                <p>In the world of code, just like in Ender, every portal opens up new possibilities. Create, explore, and never stop learning.</p>
+            <!-- Футер -->
+            <div class="footer">
+                <div class="footer-content">
+                    <p class="copyright">© 2025 MISTYA | ALL DIMENSIONS RESERVED</p>
+                    <div class="energy-level">
+                        <div class="energy-bar">
+                            <div class="energy-fill"></div>
+                        </div>
+                        <span class="energy-text">SYSTEM ENERGY: 89%</span>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="footer">
-            <p>© 2025 mistya</p>
+    </div>
+
+    <!-- Консольная панель -->
+    <div class="console-panel">
+        <div class="console-header">
+            <div class="console-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <span class="console-title">SYSTEM TERMINAL</span>
+        </div>
+        <div class="console-output">
+            <div class="console-line">> Initializing dimensional interface...</div>
+            <div class="console-line">> System date: 2025</div>
+            <div class="console-line">> User: Mistya detected</div>
+            <div class="console-line">> Status: Online across dimensions</div>
+            <div class="console-line blink">> _</div>
         </div>
     </div>
 
     <!-- Пасхалка: Змейка -->
-    <div id="snakeGame" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center;">
-        <div style="background: #1a0b2e; padding: 20px; border-radius: 15px; border: 2px solid #8a2be2;">
-            <canvas id="snakeCanvas" width="400" height="400" style="border: 2px solid #8a2be2;"></canvas>
-            <div style="text-align: center; margin-top: 15px;">
-                <button id="closeSnake" style="background: #8a2be2; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Закрыть</button>
+    <div id="snakeGame" class="easter-egg">
+        <div class="egg-container">
+            <canvas id="snakeCanvas" width="500" height="500"></canvas>
+            <div class="egg-controls">
+                <button id="closeSnake" class="cyber-button">
+                    <span>CLOSE PORTAL</span>
+                    <div class="button-glow"></div>
+                </button>
             </div>
         </div>
     </div>
@@ -83,4 +212,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
